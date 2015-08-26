@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/flightName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="JetAirways"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/activity_tabs"
+            android:textStyle="bold"
+            android:layout_weight="25"
+            />
+
+        <TextView
+            android:id="@+id/depTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_tabs"
+            android:textStyle="bold"
+            android:layout_weight="25"
+            android:textColor="@android:color/black"
+            android:text="15:00"></TextView>
+
+
+        <TextView
+            android:id="@+id/arrTime"
+            android:layout_width="0dp"
+            android:textSize="@dimen/activity_tabs"
+            android:layout_height="wrap_content"
+            android:text="17:00"
+            android:textStyle="bold"
+            android:layout_weight="25"
+            android:textColor="@android:color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:textSize="@dimen/activity_tabs"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ranklabel"
+            android:text="Rs. 1000"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_weight="25"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2 hrs"
+            android:textColor="@android:color/black"
+
+            android:layout_weight="25"
+            />
+
+        <TextView
+            android:id="@+id/fromStn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/black"
+            android:layout_weight="25"
+            android:text="15:00"></TextView>
+
+
+        <TextView
+            android:id="@+id/toStn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="17:00"
+            android:textColor="@android:color/black"
+            android:layout_weight="25"
+            />
+
+
+        <TextView
+            android:id="@+id/flightclass"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ranklabel"
+            android:text="Rs. 1000"
+            android:layout_weight="25"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

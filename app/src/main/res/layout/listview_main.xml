@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_listitem"
+        android:paddingBottom="@dimen/activity_listitem"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:orientation="horizontal"
+        android:id="@+id/sortButtons"
+        >
+
+        <Button
+            android:id="@+id/depSort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="333"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="2dp"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/activity_sortBtn"
+            android:text="@string/activity_dep"
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/arrSort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_weight="333"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="@dimen/activity_sortBtn"
+            android:text="@string/activity_arr"
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/priceSort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="333"
+            android:paddingRight="2dp"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/activity_sortBtn"
+            android:layout_marginRight="5dp"
+            android:text="@string/activity_price"
+            android:textColor="@android:color/black"
+
+            />
+
+    </LinearLayout>
+    <ListView
+        android:layout_below="@+id/sortButtons"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        />
+
+</RelativeLayout>
